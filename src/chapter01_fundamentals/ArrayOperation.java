@@ -12,13 +12,9 @@ public class ArrayOperation {
 	/**
 	 * @Title: checkArray 
 	 * @Description: 校验数组值
-	 * @param array 
+	 * @param object
 	 */
-	private static void checkArray(double[] array) {
-		//check array value is null or size == 0
-	}
-	
-	private static void checkArray(double[][] array) {
+	private static void checkArray(Object object) {
 		//check array value is null or size == 0
 	}
 	
