@@ -75,7 +75,7 @@ public class ArrayOperation {
 		checkArray(array);
 		double temp;
 		int length = array.length;
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length / 2; i++) {
 			temp = array[length - i -1];
 			array[length - i - 1] = array[i];
 			array[i] = temp;
