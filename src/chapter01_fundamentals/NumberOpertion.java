@@ -9,7 +9,7 @@ package chapter01_fundamentals;
  */
 public class NumberOpertion {
 
-	private static void checkValue(Object object) {
+	private static void checkValue(Object ...object) {
 		//check object value 
 	}
 	
@@ -111,8 +111,7 @@ public class NumberOpertion {
 	 * @return double
 	 */
 	public static double hypotenuse(double a, double b) {
-		checkValue(a);
-		checkValue(b);
+		checkValue(a, b);
 		return Math.sqrt(a * a + b * b);
 	}
 	
@@ -129,5 +128,18 @@ public class NumberOpertion {
 			sum += 1.0 / i;
 		}
 		return sum;
+	}
+	
+	/**
+	 * @Title: swap 
+	 * @Description: 交换两个数的值，不使用第三方变量进行临时存储, @see Q_1_1_6.java
+	 * @param a
+	 * @param b void
+	 */
+	public static void swap(int a, int b) {
+		checkValue(a, b);
+		a = a + b;
+		b = a - b;
+		a = a - b;
 	}
 }
