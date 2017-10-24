@@ -1,5 +1,7 @@
 package chapter01_fundamentals;
 
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  * @ClassName: ArrayOperation 
  * @Description: 典型的数组操作，见书p11
@@ -16,6 +18,13 @@ public class ArrayOperation {
 	 */
 	private static void checkArray(Object object) {
 		//check array value is null or size == 0
+	}
+	
+	public static void printArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			StdOut.print(array[i] + "\t");
+		}
+		System.out.println();
 	}
 	
 	/**
