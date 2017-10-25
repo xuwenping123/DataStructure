@@ -6,7 +6,8 @@ public class Q_1_1_16 {
 		if (n <= 0) {
 			return "";
 		}
-		// Î²µÝ¹é
+		// Î²µÝ¹é 
+		// µÝ¹éÊ±¼ä¸´ÔÓ¶È¼ÆËã: http://www.cnblogs.com/python27/archive/2011/12/09/2282486.html
 		return exR1(n - 3) + n + exR1(n - 2) + n;
 	}
 	
