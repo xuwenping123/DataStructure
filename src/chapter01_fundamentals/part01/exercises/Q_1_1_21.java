@@ -1,4 +1,4 @@
-package chapter01_fundamentals.exercises;
+package chapter01_fundamentals.part01.exercises;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
