@@ -26,11 +26,34 @@ public class FixedCapacityStack<Item> {
 	}
 	
 	public void push(Item item) {
-		
+		//新增扩容操作
+		if (N == a.length) {
+			resize(a.length * 2);
+		}
 		a[N++] = item;
 	}
 	
 	public Item pop() {
+		Item item = a[--N];
+		//新增缩容操作
+		a[N] = null;//避免对象游离
+		if (N == a.length / 4 && N > 0) {
+			resize(a.length / 2);
+		}
 		return a[--N];
+	}
+	
+	/**
+	 * @Title: resize 
+	 * @Description: 改变数组容量大小，确保数组容量使用率在25% ~ 100% 之间
+	 * @param size void
+	 */
+	@SuppressWarnings("unchecked")
+	private void resize(int size) {
+		Item[] b = (Item[]) new Object[size];
+		for (int i = 0; i < N; i++) {
+			b[i] = a[i];
+		}
+		a = b;
 	}
 }
