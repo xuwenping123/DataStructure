@@ -28,10 +28,29 @@ public class StringOperation {
 	 */
 	public static boolean isPalindrome(String s) {
 		checkString(s);
-		boolean flag = true;
+/*		boolean flag = true;
 		int start = 0;
 		int end = s.length() - 1;
-		//TODO
-		return false;
+		while (start <= end) {
+			if (s.charAt(start) != s.charAt(end)) {
+				flag = false;
+				break;
+			}
+			start++;
+			end--;
+		}
+		return flag;*/
+		/* book
+		 * 1. 变量定义少
+		 * 2. 当数组长度为奇数时，不需要比较中间的值
+		 * 3. 当判断不等于时直接返回false
+		 *   */
+		int N = s.length();
+		for (int i = 0; i < N / 2; i++) {
+			if (s.charAt(i) != s.charAt(N - 1 - i)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
