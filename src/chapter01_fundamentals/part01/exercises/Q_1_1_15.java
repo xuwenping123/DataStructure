@@ -1,6 +1,6 @@
-package chapter01_fundamentals.exercises;
+package chapter01_fundamentals.part01.exercises;
 
-import chapter01_fundamentals.ArrayOperation;
+import chapter01_fundamentals.part01.ArrayOperation;
 
 public class Q_1_1_15 {
 

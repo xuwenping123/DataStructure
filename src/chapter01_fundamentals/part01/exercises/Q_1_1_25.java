@@ -1,4 +1,4 @@
-package chapter01_fundamentals.exercises;
+package chapter01_fundamentals.part01.exercises;
 
 /**
   * @ClassName: Q_1_1_25

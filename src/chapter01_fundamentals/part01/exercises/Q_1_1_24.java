@@ -1,4 +1,4 @@
-package chapter01_fundamentals.exercises;
+package chapter01_fundamentals.part01.exercises;
 
 import edu.princeton.cs.algs4.StdIn;
 

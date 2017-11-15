@@ -1,4 +1,4 @@
-package chapter01_fundamentals;
+package chapter01_fundamentals.part01;
 
 import edu.princeton.cs.algs4.StdOut;
 
