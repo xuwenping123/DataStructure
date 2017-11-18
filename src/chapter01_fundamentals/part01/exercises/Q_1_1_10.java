@@ -6,6 +6,8 @@ public class Q_1_1_10 {
 		int[] a;
 		for (int i = 0; i < 10; i++) {
 			//a[i] = i * i;  编译失败！a[i]数组未进行初始化  
+			a = new int[10];
+			System.out.println(a);
 		}
 	}
 }

@@ -10,7 +10,7 @@ public class Q_1_1_26 {
 	 * 对于类型的泛型失败
 	 */
 	public static <T extends Number> void sort(T a, T b, T c) {
-		T t;
+//		T t;
 	}
 	
 	public static void sort(int a, int b, int c) {

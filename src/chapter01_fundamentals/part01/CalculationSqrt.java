@@ -67,6 +67,7 @@ public class CalculationSqrt {
 
 	public static void main(String[] args) {
 		sqrt(2.0f, 0.01f);
+		sqrtNewton(2.0f, 0.01f);
 	}
 	
 	public static double abs(double num) {

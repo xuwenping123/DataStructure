@@ -40,7 +40,7 @@ public class FixedCapacityStack<Item> {
 		if (N == a.length / 4 && N > 0) {
 			resize(a.length / 2);
 		}
-		return a[--N];
+		return item;
 	}
 	
 	/**
