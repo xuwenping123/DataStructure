@@ -1,4 +1,4 @@
-package chapter01_fundamentals.part03;
+package chapter01_fundamentals.part03.stack;
 
 /**
  * @ClassName: Stack 
