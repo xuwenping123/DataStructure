@@ -21,5 +21,18 @@ package chapter01_fundamentals.part03.node;
 public class Node <Item>{
 
 	Item item;//存储数据
-	Node node;// 
+	Node next;// 存储下一个节点
+	
+	public Node(Item item, Node next) {
+		this.item = item;
+		this.next = next;
+	}
+	
+	public Node() {}
+	
+	public static void main(String[] args) {
+		Node<Object> node = new Node<Object>();
+		node.item = 0;
+		node.next = new Node<Object>(0, null);
+	}
 }
